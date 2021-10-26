@@ -6,21 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Tarjeta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tarjeta);
     }
-
-    public void Siguiente(View view) {
+    public void seguirr(View view) {
         Intent intent=new Intent(getApplicationContext(),Login.class);
-        startActivity(intent);
-    }
-
-    public void iniciar(View view) {
-        Intent intent=new Intent(getApplicationContext(),Registrar.class);
         startActivity(intent);
     }
 }
