@@ -15,7 +15,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void entrar(View view) {
-        Intent intent = new Intent(getApplicationContext(),Cartelera.class);
-        startActivity(intent);
+            Intent intent = new Intent(getApplicationContext(),Cartelera.class);
+            startActivity(intent);
+        }
     }
-}

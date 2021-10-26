@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOCA">
         <activity
+            android:name=".AgregarPelis"
+            android:exported="false" />
+        <activity
+            android:name=".adminvista"
+            android:exported="false" />
+        <activity
             android:name=".Cartelera"
             android:exported="false" />
         <activity
