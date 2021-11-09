@@ -26,31 +26,29 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView titulo,anio,descripcion,precio,director;
-        ImageView imagen;
+        //ImageView imagen;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            titulo=itemView.findViewById(R.id.rc_Titulo);
-            descripcion=itemView.findViewById(R.id.rc_Descripcion);
-            anio=itemView.findViewById(R.id.rc_anio);
-            precio=itemView.findViewById(R.id.rc_precio);
-            director=itemView.findViewById(R.id.rc_Director);
-            imagen=itemView.findViewById(R.id.rc_imagen);
+            titulo=itemView.findViewById(R.id.etttitulo);
+            descripcion=itemView.findViewById(R.id.ettDescripcion);
+            anio=itemView.findViewById(R.id.ettAÑO);
+            director=itemView.findViewById(R.id.ettDirector);
+            precio=itemView.findViewById(R.id.ettPrecio);
         }
 
         public void juntardata(Peliculas item){
             titulo.setText(item.getTitulo());
             descripcion.setText(item.getDescripcion());
-            anio.setText(item.getAnio());
-            precio.setText(item.getPrecio());
+            anio.setText(item.getAño());
             director.setText(item.getDirector());
-            imagen.setImageResource(item.getImagen());
+            precio.setText(item.getPrecio());
         }
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view =layoutInflater.inflate(R.layout.contenido,null);
+        View view =layoutInflater.inflate(R.layout.lista_peliculas,parent,false);
         return new ViewHolder(view);
     }
 

@@ -44,9 +44,9 @@ public class Eliminarusuario extends AppCompatActivity {
                 });
     }
     public void Eliminarusu(View view) {
-        String id=tvId.getText().toString();
+        String nombreusuario=tvId.getText().toString();
         db.collection("usuarios")
-                .document(id)
+                .document(nombreusuario)
                 .delete()
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

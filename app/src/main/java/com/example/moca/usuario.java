@@ -4,6 +4,9 @@ import java.util.Date;
 
 public class usuario {
 
+
+
+
     private   String nombre;
     private   String contraseña;
     private   String email;
@@ -11,17 +14,15 @@ public class usuario {
     private   int telefono;
     private   int tarjeta;
     private   int cvv;
-
-    public usuario(String nombre, String contraseña, String email, int telefono) {
+    public usuario(String nombre, String contraseña, String email) {
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.email = email;
         this.fecha = fecha;
-        this.telefono = this.telefono;
+        this.telefono = telefono;
         this.tarjeta = tarjeta;
         this.cvv = cvv;
     }
-
     public String getNombre() {
         return nombre;
     }
@@ -46,6 +47,14 @@ public class usuario {
         this.email = email;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
     public int getTelefono() {
         return telefono;
     }
@@ -62,14 +71,6 @@ public class usuario {
         this.tarjeta = tarjeta;
     }
 
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
-
     public int getCvv() {
         return cvv;
     }
@@ -77,5 +78,4 @@ public class usuario {
     public void setCvv(int cvv) {
         this.cvv = cvv;
     }
-
 }

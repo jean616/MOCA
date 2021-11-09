@@ -41,8 +41,7 @@ public class RegistroUsuarios extends AppCompatActivity {
                                 String nombreu = usuar.getData().get("nombreusuario").toString();
                                 String contraseña = usuar.getData().get("contraseña").toString();
                                 String email = usuar.getData().get("email").toString();
-                                int telefono = Integer.parseInt(usuar.getData().get("telefono").toString());
-                                usuarioList.add(new usuario(nombreu,contraseña,email,telefono));
+                                usuarioList.add(new usuario(nombreu,contraseña,email));
                             }
                             ListAdapterr adaptera=new ListAdapterr(usuarioList,getApplicationContext());
                             RecyclerView recyclerView = findViewById(R.id.myRecycler1);

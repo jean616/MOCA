@@ -22,12 +22,13 @@ public class ListAdapterr extends RecyclerView.Adapter<ListAdapterr.ViewHolder> 
         this.context = context;
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView nombre,contraseña,email,telefono;
+        TextView nombre,contraseña,email,id;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nombre=itemView.findViewById(R.id.ettnombre);
             contraseña=itemView.findViewById(R.id.ettcontraseña);
             email=itemView.findViewById(R.id.ettemail);
+            id=itemView.findViewById(R.id.ettID);
         }
 
         public void juntardataa(usuario item){

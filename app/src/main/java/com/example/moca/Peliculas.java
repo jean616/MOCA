@@ -2,22 +2,20 @@ package com.example.moca;
 
 public class Peliculas {
 
-
     private String titulo;
-    private String anio;
+    private String año;
     private String descripcion;
-    private String precio;
     private String director;
-    private int imagen;
 
-    public Peliculas(String titulo, String anio, String descripcion, String precio, String director, int imagen) {
+    public Peliculas(String titulo, String año, String descripcion, String director, String precio) {
         this.titulo = titulo;
-        this.anio = anio;
+        this.año = año;
         this.descripcion = descripcion;
-        this.precio = precio;
         this.director = director;
-        this.imagen = imagen;
+        this.precio = precio;
     }
+
+    private String precio;
 
     public String getTitulo() {
         return titulo;
@@ -27,12 +25,12 @@ public class Peliculas {
         this.titulo = titulo;
     }
 
-    public String getAnio() {
-        return anio;
+    public String getAño() {
+        return año;
     }
 
-    public void setAnio(String anio) {
-        this.anio = anio;
+    public void setAño(String año) {
+        this.año = año;
     }
 
     public String getDescripcion() {
@@ -43,14 +41,6 @@ public class Peliculas {
         this.descripcion = descripcion;
     }
 
-    public String getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
-
     public String getDirector() {
         return director;
     }
@@ -59,13 +49,16 @@ public class Peliculas {
         this.director = director;
     }
 
-    public int getImagen() {
-        return imagen;
+    public String getPrecio() {
+        return precio;
     }
 
-    public void setImagen(int imagen) {
-        this.imagen = imagen;
+    public void setPrecio(String precio) {
+        this.precio = precio;
     }
+
+
+
 
 
 
