@@ -18,4 +18,8 @@ public class Login extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(),Cartelera.class);
             startActivity(intent);
         }
+    public void entrarvip(View view) {
+        Intent intent = new Intent(getApplicationContext(),adminvista.class);
+        startActivity(intent);
+    }
     }

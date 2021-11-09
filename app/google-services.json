@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "562948850363",
+    "project_id": "moca-2d6d5",
+    "storage_bucket": "moca-2d6d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562948850363:android:a388e38723eb98a5c2df9e",
+        "android_client_info": {
+          "package_name": "com.example.moca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562948850363-utiqn0jvhbk2ltss8jr0dr70s7lvsit4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1VHDOlyzfK5MrmdbKklI3AHjZh7WqYD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562948850363-utiqn0jvhbk2ltss8jr0dr70s7lvsit4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

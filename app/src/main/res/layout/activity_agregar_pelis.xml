@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Titulo"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintBottom_toTopOf="@+id/keytitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
         app:srcCompat="@drawable/ic_baseline_add_box_24" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/keytitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.36" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/keyaño"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.507" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/keydescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -121,7 +121,7 @@
         app:layout_constraintVertical_bias="0.637" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/keydirector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.752" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/keyprecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -155,9 +155,9 @@
         android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.994" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

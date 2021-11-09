@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOCA">
         <activity
+            android:name=".Eliminarusuario"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroUsuarios"
+            android:exported="false" />
+        <activity
             android:name=".AgregarPelis"
             android:exported="false" />
         <activity
@@ -18,9 +24,6 @@
         <activity
             android:name=".Cartelera"
             android:exported="false" />
-        <activity
-            android:name=".Tarjeta"
-            android:exported="true" />
         <activity
             android:name=".Registrar"
             android:exported="true" />

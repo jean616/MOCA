@@ -85,4 +85,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="entrarvip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="55dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,4 +23,13 @@ public class adminvista extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),AgregarPelis.class);
         startActivity(intent);
     }
+    public void entrarusuarios(View view) {
+        Intent intent = new Intent(getApplicationContext(),RegistroUsuarios.class);
+        startActivity(intent);
+    }
+
+    public void pasareliminar(View view) {
+        Intent intent = new Intent(getApplicationContext(),Eliminarusuario.class);
+        startActivity(intent);
+    }
 }
