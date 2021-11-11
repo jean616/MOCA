@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Eliminarusuario">
+    tools:context=".eliminar_pelicula">
     <Button
-        android:id="@+id/etteliminar"
+        android:id="@+id/etteliminarpelis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar"
-        android:onClick="Eliminarusu"
+        android:onClick="EliminarPelis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ettID"
+        app:layout_constraintTop_toBottomOf="@+id/ettIDpelis"
         app:layout_constraintVertical_bias="0.124" />
 
     <EditText
-        android:id="@+id/ettID"
+        android:id="@+id/ettIDpelis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

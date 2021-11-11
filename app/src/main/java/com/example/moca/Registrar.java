@@ -22,7 +22,8 @@ import java.util.Map;
 
 public class Registrar extends AppCompatActivity {
     EditText etnombreusuario,etcontraseña,etemail,ettelefono,ettarjeta,etfecha,etcvv;
-    TextView txmostrar;
+    TextView txmostrar,tipo;
+
     FirebaseFirestore db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +36,11 @@ public class Registrar extends AppCompatActivity {
         ettarjeta=findViewById(R.id.keytarjetanum);
         etfecha=findViewById(R.id.keyfecha);
         etcvv=findViewById(R.id.keycvv);
-        db = FirebaseFirestore .getInstance();
 
+        db = FirebaseFirestore .getInstance();
     }
     public void guardausuari(View view) {
+        String tipo="usuario";
         String nombre = etnombreusuario.getText().toString();
         String contraseña = etcontraseña.getText().toString();
         String email = etemail.getText().toString();
@@ -46,7 +48,6 @@ public class Registrar extends AppCompatActivity {
         int cvv = Integer.parseInt(etcvv.getText().toString()) ;
         int telefono = Integer.parseInt(ettelefono.getText().toString());
         int tarjeta = Integer.parseInt(ettarjeta.getText().toString());
-
         Map<String,Object> usuario = new HashMap<>();
         usuario.put("nombreusuario",nombre);
         usuario.put("contraseña",contraseña);
@@ -55,6 +56,7 @@ public class Registrar extends AppCompatActivity {
         usuario.put("tarjeta",tarjeta);
         usuario.put("fecha",fecha);
         usuario.put("cvv",cvv);
+        usuario.put("tipo",tipo);
         db.collection("usuarios")
                 .add(usuario)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

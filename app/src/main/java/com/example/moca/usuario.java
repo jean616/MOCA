@@ -14,6 +14,8 @@ public class usuario {
     private   int telefono;
     private   int tarjeta;
     private   int cvv;
+    private   String tipo;
+
     public usuario(String nombre, String contraseña, String email) {
         this.nombre = nombre;
         this.contraseña = contraseña;
@@ -22,7 +24,9 @@ public class usuario {
         this.telefono = telefono;
         this.tarjeta = tarjeta;
         this.cvv = cvv;
+        this.tipo = tipo;
     }
+
     public String getNombre() {
         return nombre;
     }
@@ -78,4 +82,13 @@ public class usuario {
     public void setCvv(int cvv) {
         this.cvv = cvv;
     }
+
+    public String gettipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        tipo = tipo;
+    }
+
 }
