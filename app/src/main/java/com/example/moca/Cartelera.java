@@ -30,7 +30,6 @@ import java.util.List;
 public class Cartelera extends AppCompatActivity {
     FirebaseFirestore db;
     List<Peliculas> pelisList;
-    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,10 +50,10 @@ public class Cartelera extends AppCompatActivity {
                                 String precio = ("s/"+peliss.getData().get("precio").toString());
                                 pelisList.add(new Peliculas(titulo, año, descripcion, director, precio));
                             }
-                            ListAdapter adaptere = new ListAdapter(pelisList, getApplicationContext());
+                            ListAdapter adapter = new ListAdapter(pelisList, getApplicationContext());
                             RecyclerView recyclerView12 = findViewById(R.id.myRecycler2);
                             recyclerView12.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                            recyclerView12.setAdapter(adaptere);
+                            recyclerView12.setAdapter(adapter);
                             ;
                         } else {
                             Log.w("APP", "Error al traer documentos", task.getException());

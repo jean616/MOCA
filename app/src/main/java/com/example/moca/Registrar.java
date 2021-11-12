@@ -23,7 +23,6 @@ import java.util.Map;
 public class Registrar extends AppCompatActivity {
     EditText etnombreusuario,etcontraseña,etemail,ettelefono,ettarjeta,etfecha,etcvv;
     TextView txmostrar,tipo;
-
     FirebaseFirestore db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
