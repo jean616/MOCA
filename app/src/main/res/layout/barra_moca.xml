@@ -19,4 +19,5 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         />
+
 </androidx.appcompat.widget.Toolbar>

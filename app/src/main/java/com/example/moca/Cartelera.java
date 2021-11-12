@@ -2,6 +2,7 @@ package com.example.moca;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,9 +13,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -42,9 +46,9 @@ public class Cartelera extends AppCompatActivity {
                             for (QueryDocumentSnapshot peliss : task.getResult()) {
                                 String titulo = peliss.getData().get("titulo").toString();
                                 String año = peliss.getData().get("año").toString();
-                                String descripcion = peliss.getData().get("descripcion").toString();
-                                String director = peliss.getData().get("director").toString();
-                                String precio = peliss.getData().get("precio").toString();
+                                String descripcion = ("Descripcion"+"\n"+peliss.getData().get("descripcion").toString());
+                                String director =("Director:"+peliss.getData().get("director").toString());
+                                String precio = ("s/"+peliss.getData().get("precio").toString());
                                 pelisList.add(new Peliculas(titulo, año, descripcion, director, precio));
                             }
                             ListAdapter adaptere = new ListAdapter(pelisList, getApplicationContext());
@@ -74,9 +78,9 @@ public class Cartelera extends AppCompatActivity {
     {
         switch (item.getItemId())
         {
-            case R.id.item1:
+            /*case R.id.item1:
                 Toast.makeText(getApplicationContext(), "Opcion 1", Toast.LENGTH_SHORT);
-                return true;
+                return true;*/
             case R.id.item2:
                 Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);

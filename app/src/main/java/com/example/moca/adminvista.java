@@ -34,7 +34,7 @@ public class adminvista extends AppCompatActivity {
     }
 
     public void EliminarPelicula(View view) {
-        Intent intent = new Intent(getApplicationContext(),Eliminarusuario.class);
+        Intent intent = new Intent(getApplicationContext(),eliminar_pelicula.class);
         startActivity(intent);
     }
 }

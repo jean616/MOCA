@@ -3,6 +3,7 @@ package com.example.moca;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -50,6 +51,8 @@ public class eliminar_pelicula extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         Toast.makeText(getApplicationContext(),"Pelicula eliminada",Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(getApplicationContext(),adminvista.class);
+                        startActivity(intent);
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

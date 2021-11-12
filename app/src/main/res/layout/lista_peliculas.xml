@@ -63,5 +63,4 @@
             android:textStyle="bold"
             android:text="Precio" />
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

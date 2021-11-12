@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.moca.Peliculas;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
@@ -24,6 +25,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         this.layoutInflater = layoutInflater.from(context);
         this.context = context;
     }
+
+    public ListAdapter(ArrayList<Peliculas> misdatos) {
+    }
+
+
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView titulo,anio,descripcion,precio,director;
         //ImageView imagen;

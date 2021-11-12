@@ -45,7 +45,7 @@ public class AgregarPelis extends AppCompatActivity {
         int precio = Integer.parseInt(etPrecio.getText().toString());
 
         Map<String, Object> Peliculas = new HashMap<>();
-        Peliculas.put("nombrep", titulo);
+        Peliculas.put("titulo", titulo);
         Peliculas.put("año", año);
         Peliculas.put("descripcion", descripcion);
         Peliculas.put("director", director);
